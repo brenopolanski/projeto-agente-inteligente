@@ -1,0 +1,152 @@
+/* ------------------------------------------------------------------------------------------------------------------
+    Descrição: Folha de estilos fundamental para marcação e visualização da página
+    Versão: 1.0        
+    Autor: Breno Polanski - breno.polanski@gmail.com - www.brenopolanski.com
+---------------------------------------------------------------------------------------------------------------------
+
+LEGENDAS:
+
+    0. GLOBAL
+	1. GAME
+	2. MENU FIXED BAR
+
+-------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ==========================================================================
+   	0. GLOBAL
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+	font-family: 'fontawesome';
+	src:url('../fonts/fontawesome.eot');
+	src:url('../fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/fontawesome.svg#fontawesome') format('svg'),
+		url('../fonts/fontawesome.woff') format('woff'),
+		url('../fonts/fontawesome.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 100%;
+	color: #fff;
+}
+
+img { 
+	border: none; 
+	vertical-align: middle;
+}
+
+.float-right {
+	float: right;
+}
+
+
+/* ==========================================================================
+   1. GAME
+   ========================================================================== */
+
+.container {
+	width: 650px;
+	height: 650px;
+	margin: 15px auto;
+}
+
+#city {
+	position: relative;
+	width: 640px;
+	height: 640px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.cell {
+	display: block;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+}
+
+
+/* ==========================================================================
+   2. MENU FIXED BAR
+   ========================================================================== */
+
+.menu-charm-bar {
+	background: #47a3da;
+	position: fixed;
+}
+
+.menu-charm-bar h3 {
+	background: #0d77b6;
+	color: #afdefa;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: bold;
+}
+
+.menu-charm-bar a {
+	display: block;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Cor dos tipos de lixos recicláveis */
+
+/* Papel */
+a.paper {
+	background: #0000ff;
+}
+
+/* Metal */
+a.metal {
+	background: #ffff00;
+	color: #000;
+}
+
+/* Plastico */
+a.plastic {
+	background: #ff0000;
+}
+
+/* Vidro */
+a.glass {
+	background: #008000;
+}
+
+/* Orientação menu vertical */
+
+.menu-vertical {
+	width: 300px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.menu-vertical a {
+	border-bottom: 1px solid #258ecd;
+	padding: 1em;
+}
+
+/* imagens layout */
+
+.play {
+	position: absolute;
+	top: 30px;
+	right: 220px;
+}
+
+.logo {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
